@@ -2,6 +2,9 @@
 
 if ! [ -f /etc/user_created ] ; then
     mkdir -p /home/$XRDPUSER
+    
+    groupadd $XRDPUSER
+
     useradd --system \
    --shell /bin/bash \
    --group $XRDPUSER \
