@@ -1,5 +1,5 @@
 #!/bin/sh
 
-/usr/sbin/xrdp-sesman --nodaemon &
+/usr/local/sbin/xrdp-sesman --nodaemon &
 
-exec /usr/sbin/xrdp --nodaemon
+exec /usr/local/sbin/xrdp --nodaemon
