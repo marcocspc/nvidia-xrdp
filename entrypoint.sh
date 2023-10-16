@@ -7,7 +7,7 @@ if ! [ -f /etc/user_created ] ; then
     \
     && useradd --system \
    --shell /bin/bash \
-   --group $XRDPUSER \
+   -g $XRDPUSER \
    --home /home/$XRDPUSER \
    $XRDPUSER \
    \
