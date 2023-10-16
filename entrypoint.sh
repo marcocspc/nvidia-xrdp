@@ -4,7 +4,6 @@ if ! [ -f /etc/user_created ] ; then
     mkdir -p /home/$XRDPUSER
     useradd --system \
    --shell /bin/bash \
-   --gecos 'Default xrdp user.' \
    --group \
    --disabled-password \
    --home /home/$XRDPUSER
