@@ -4,8 +4,7 @@ if ! [ -f /etc/user_created ] ; then
     mkdir -p /home/$XRDPUSER
     useradd --system \
    --shell /bin/bash \
-   --group \
-   --disabled-password \
+   --group $XRDPUSER \
    --home /home/$XRDPUSER
 
    touch /etc/user_created
