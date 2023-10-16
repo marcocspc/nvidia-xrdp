@@ -64,3 +64,9 @@ RUN cd /xrdp && \
 
 #install xfce desktop
 RUN dnf groupinstall -y 'Xfce desktop'
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 3389
+CMD ["/entrypoint.sh"]
