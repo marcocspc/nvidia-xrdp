@@ -1,5 +1,5 @@
 #!/bin/sh
 
-/usr/local/sbin/xrdp-sesman --nodaemon &
+/usr/local/sbin/xrdp-sesman --nodaemon >> /dev/sdtout 2>&1 &
 
-exec /usr/local/sbin/xrdp --nodaemon
+exec /usr/local/sbin/xrdp --nodaemon >> /dev/sdtout 2>&1
